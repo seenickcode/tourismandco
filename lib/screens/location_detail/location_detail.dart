@@ -11,7 +11,7 @@ class LocationDetail extends StatelessWidget {
       ),
       body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             _bannerContainer(Colors.red),
             _textSectionContainer(Colors.green),
@@ -34,7 +34,7 @@ class LocationDetail extends StatelessWidget {
   Widget _textSectionContainer(Color color) {
     return Container(
       decoration: BoxDecoration(color: color),
-      child: Text("This is some text section."),
+      child: Text("This is some text."),
     );
   }
 }
