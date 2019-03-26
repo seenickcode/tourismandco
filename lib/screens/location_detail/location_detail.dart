@@ -9,20 +9,26 @@ class LocationDetail extends StatelessWidget {
       appBar: AppBar(
         title: Text('Location Detail'),
       ),
-      body: Column(children: [
-        _bannerContainer(Colors.red),
-        _textSectionContainer(Colors.green),
-        _textSectionContainer(Colors.blue),
-        _textSectionContainer(Colors.purple)
-      ]),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            _bannerContainer(Colors.red),
+            _textSectionContainer(Colors.green),
+            _textSectionContainer(Colors.blue),
+            _textSectionContainer(Colors.purple)
+          ]),
     );
   }
 
   Widget _bannerContainer(Color color) {
     return Container(
-      decoration: BoxDecoration(color: color),
-      child: Text("This is my banner."),
-    );
+        constraints: BoxConstraints.expand(height: 200.0),
+        decoration: BoxDecoration(color: color),
+        child: Image.asset(
+          "assets/images/kiyomizu-dera.jpg",
+          fit: BoxFit.cover,
+        ));
   }
 
   Widget _textSectionContainer(Color color) {
