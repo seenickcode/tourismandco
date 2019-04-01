@@ -1,5 +1,3 @@
-// screens/home/home.dart
-
 import 'package:flutter/material.dart';
 import 'text_section.dart';
 
