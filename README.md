@@ -1,16 +1,16 @@
 # tourismandco
 
-A new Flutter project.
+A example Flutter app used for [](https://fluttercrashcourse.com), displaying a list of interesting locations you can visit as a tourist. Tapping on a list item shows a nice detail page where you can book the tour.
 
-## Getting Started
+## Branches
 
-This project is a starting point for a Flutter application.
+- `step/step01` basic app with `Scaffold`
+- `step/step02` layout, `Conatiner` and parameterized widgets
+- `step/step03` images
+- `step/step04` styling text, custom fonts
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+![](Location&#32;List.png)
+![](Location&#32;Detail.png)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
