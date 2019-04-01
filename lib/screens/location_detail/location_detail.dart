@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../models/location.dart';
 import 'image_banner.dart';
 import 'text_section.dart';
 
@@ -14,10 +15,11 @@ class LocationDetail extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/kiyomizu-dera.jpg"),
-            TextSection(Colors.red),
-            TextSection(Colors.green),
-            TextSection(Colors.blue),
-          ]),
+          ]..addAll(textSections())),
     );
+  }
+
+  List<Widget> textSections() {
+    return Location.fetchAll().map((obj) => TextSection(Colors.red)).toList();
   }
 }
