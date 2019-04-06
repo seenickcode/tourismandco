@@ -14,9 +14,12 @@ class LocationDetail extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/kiyomizu-dera.jpg"),
-            TextSection(Colors.red),
-            TextSection(Colors.green),
-            TextSection(Colors.blue),
+            TextSection("summary1",
+                "jkfld;js fdjsk al;fdjks l;afjkd sajkfjfkdlj sfkdjls fjdslfkj djfkldsj fkljd slkfs"),
+            TextSection("summary2",
+                "jkfld;js fdjsk al;fdjks l;afjkd sajkfjfkdlj sfkdjls fjdslfkj djfkldsj fkljd slkfs"),
+            TextSection("summary3",
+                "jkfld;js fdjsk al;fdjks l;afjkd sajkfjfkdlj sfkdjls fjdslfkj djfkldsj fkljd slkfs"),
           ]),
     );
   }

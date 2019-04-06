@@ -8,11 +8,14 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LocationDetail(),
-      theme: ThemeData(
-          textTheme: TextTheme(
-        body1: Body1Style,
-      )),
-    );
+        home: LocationDetail(),
+        theme: ThemeData(
+            appBarTheme: AppBarTheme(
+              textTheme: TextTheme(title: AppBarTextStyle),
+            ),
+            textTheme: TextTheme(
+              title: TitleTextStyle,
+              body1: Body1TextStyle,
+            )));
   }
 }
