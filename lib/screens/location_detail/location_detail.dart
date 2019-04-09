@@ -6,6 +6,8 @@ import 'text_section.dart';
 class LocationDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // simply fetch the first location we have
+    // NOTE: we'll be moving this to a scoped_model later
     final locations = Location.fetchAll();
     final location = locations.first;
 
