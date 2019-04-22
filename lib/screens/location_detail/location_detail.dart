@@ -10,7 +10,6 @@ class LocationDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // simply fetch the first location we have
     // NOTE: we'll be moving this to a scoped_model later
     final location = Location.fetchByID(_locationID);
 

@@ -12,11 +12,6 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // NOTE: for example only, doesn't support route arguments though!
-      // routes: {
-      //   LocationsRoute: (context) => Locations(),
-      //   LocationDetailRoute: (context) => LocationDetail(),
-      // },
       onGenerateRoute: _routes(),
       theme: _theme(),
     );
