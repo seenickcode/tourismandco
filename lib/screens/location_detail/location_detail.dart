@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/location.dart';
-import 'image_banner.dart';
+import '../../widgets/image_banner.dart';
+import '../../widgets/location_tile.dart';
 import 'text_section.dart';
 
 class LocationDetail extends StatelessWidget {
@@ -21,7 +22,14 @@ class LocationDetail extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            ImageBanner(location.imagePath),
+            ImageBanner(
+              assetPath: location.imagePath,
+              height: 200.0,
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(vertical: 20.0),
+              child: LocationTile(location: location),
+            ),
           ]..addAll(textSections(location))),
     );
   }
