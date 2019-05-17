@@ -23,6 +23,7 @@ class LocationTile extends StatelessWidget {
           children: [
             Text(
               location.name.toUpperCase(),
+              key: Key('location_tile_name_${location.id}'),
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
               style:
