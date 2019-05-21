@@ -10,9 +10,9 @@ class LocationDetail extends StatelessWidget {
   LocationDetail(this._locationID);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) async {
     // NOTE: we'll be moving this to a scoped_model later
-    final location = Location.fetchByID(_locationID);
+    final location = await Location.fetchByID(_locationID);
 
     return Scaffold(
         appBar: AppBar(
