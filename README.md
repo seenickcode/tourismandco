@@ -9,6 +9,7 @@ A example Flutter app used for [](https://fluttercrashcourse.com), displaying a 
 - `step/step03` images
 - `step/step04` styling text, custom fonts
 - `step/step05` working with models
+- `step/step05` working with models
 
 ## Screenshots
 
